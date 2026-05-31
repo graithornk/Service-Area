@@ -3,6 +3,44 @@
   <Document>
     <name>AMF Service Area</name>
     <description>This map shows where customers may receive services from AMF Construction</description>
+    <Style id="poly-000000-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-000000-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-000000-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
     <Style id="poly-000000-2000-77-nodesc-normal">
       <LineStyle>
         <color>ff000000</color>
@@ -749,6 +787,68 @@
               </coordinates>
             </LinearRing>
           </innerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Rogue Valley</name>
+        <styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -123.37321,42.754389,0
+                -123.478953,42.755398,0
+                -123.561254,42.556404,0
+                -123.793879,41.997396,0
+                -123.684016,41.994334,0
+                -123.572092,42.055543,0
+                -123.326872,42.15145,0
+                -123.101308,42.115551,0
+                -123.028524,42.1237,0
+                -122.9067688,42.155489,0
+                -122.695282,42.0862233,0
+                -122.569273,42.135056,0
+                -122.70704,42.472665,0
+                -122.6842957,42.6766055,0
+                -122.846344,42.6927575,0
+                -122.9534607,42.5593779,0
+                -123.174023,42.58906,0
+                -123.265921,42.721609,0
+                -123.37321,42.754389,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Coast</name>
+        <styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -124.222221,42.006683,0
+                -124.1709783,41.999821,0
+                -124.183774,42.082843,0
+                -124.348925,42.274891,0
+                -124.3138006,42.3925361,0
+                -124.3302801,42.5950551,0
+                -124.4676092,42.7969182,0
+                -124.5362737,42.7949028,0
+                -124.514512,42.743813,0
+                -124.448623,42.686362,0
+                -124.404462,42.516213,0
+                -124.430953,42.334872,0
+                -124.359199,42.115978,0
+                -124.222221,42.006683,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
         </Polygon>
       </Placemark>
     </Folder>
